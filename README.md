@@ -23,5 +23,5 @@ The default number of days that the script will automate is set to 7 days. Feel 
 - [ ] Exception handling
 - [x] Do a report for x number of days
 - [x] Have the report mention if any benched players are Active
-- [] Account for fantasy rule where you can have an additional player on your roster if one of your players is injured
-- [] Report status of a player e.g. Healthy, Injured, Out, Game Time Decision(GTD)
+- [ ] Account for fantasy rule where you can have an additional player on your roster if one of your players is injured
+- [ ] Report status of a player e.g. Healthy, Injured, Out, Game Time Decision(GTD)
