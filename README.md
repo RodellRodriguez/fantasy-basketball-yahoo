@@ -2,7 +2,9 @@
 
 **Description**
 
-This Python Selenium script logs into the Yahoo fantasy basketball account and so far it will tell you a few players: name, team, assigned fantasy position, and if they're playing today. I will edit the script such that it will display all players on your team. So far I only do 2 players.
+It is my first time playing Fantasy Basketball and my friends decided to use Yahoo's Fantasy Basketball website. The NBA has 82 games in the season so that means I would need to choose which of my players to start at least 82 times. I decided to create a Python script, utilizing the Selenium library, that automates the task of starting your active players for as many days as the user desires. Active means a player is playing on the corresponding date. Additionally, if an active player ends up on the bench, the user will get notified with the date and player that this situation applies to. This safety measure is so that the user can look into this matter and decide for himself/herself who to start and who to bench.
+
+The default number of days that the script will automate is set to 7 days. Feel free to change the number as you see fit.
 
 **Dependencies**
 * Python 3.5
@@ -11,12 +13,12 @@ This Python Selenium script logs into the Yahoo fantasy basketball account and s
 
 **Setup**
 1. Download script
-2. Change username, password, team name, and chromedriver location depending on your OS
+2. Change any of the capitilized variables in the script e.g. username, password, team name, and chromedriver location depending on your OS
 3. Install dependencies
 4. Run Program
 
 **To-Do List**
 
 - [ ] Exception handling
-- [ ] Do a report for 7 days
-- [ ] Have the report mention if all the fantasy positions have games and which ones don't
+- [x] Do a report for 7 days
+- [x] Have the report mention if all the fantasy positions have games and which ones don't
