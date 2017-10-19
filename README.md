@@ -13,12 +13,15 @@ The default number of days that the script will automate is set to 7 days. Feel 
 
 **Setup**
 1. Download script
-2. Change any of the capitilized variables in the script e.g. username, password, team name, and chromedriver location depending on your OS
-3. Install dependencies
-4. Run Program
+2. Change any of the capitilized variables in the script e.g. YAHOO_EMAIL, YAHOO_PASSWORD, and CHROME_DRIVER_PATH depending on your OS
+3. Change NUM_OF_PLAYERS variable to 14 if you are allowed to have an extra player on your roster if one of your players is injured
+4. Install dependencies
+5. Run Program
 
 **To-Do List**
 
 - [ ] Exception handling
 - [x] Do a report for x number of days
 - [x] Have the report mention if any benched players are Active
+- [] Account for fantasy rule where you can have an additional player on your roster if one of your players is injured
+- [] Report status of a player e.g. Healthy, Injured, Out, Game Time Decision(GTD)
