@@ -64,7 +64,7 @@ def main():
 	for day in range(0,NUM_OF_DAYS):
 		date = driver.find_element_by_xpath("//span[@id='selectlist_nav']/a[2]").text
 		print("Date is: " + date + "\n")
-		#start_active_players(driver)
+		start_active_players(driver)
 		
 		for x in range(1,NUM_OF_PLAYERS+1):
 		#tr[x] where x is the x'th player row. First element is 1 NOT 0
