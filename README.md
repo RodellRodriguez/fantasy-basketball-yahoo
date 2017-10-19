@@ -13,7 +13,7 @@ The default number of days that the script will automate is set to 7 days. Feel 
 
 **Setup**
 1. Download script
-2. Change any of the capitilized variables in the script e.g. YAHOO_EMAIL, YAHOO_PASSWORD, and CHROME_DRIVER_PATH depending on your OS
+2. Change any of the capitilized variables in the script as necessary e.g. YAHOO_EMAIL, YAHOO_PASSWORD, and CHROME_DRIVER_PATH for the location of your chromedriver.exe file. For OPTIONS, [here](https://peter.sh/experiments/chromium-command-line-switches/) is a list of options you can set for the Chrome Browser
 3. Change NUM_OF_PLAYERS variable to 14 if you are allowed to have an extra player on your roster if one of your players is injured
 4. Install dependencies
 5. Run Program
