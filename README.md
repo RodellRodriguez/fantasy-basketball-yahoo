@@ -20,5 +20,5 @@ The default number of days that the script will automate is set to 7 days. Feel 
 **To-Do List**
 
 - [ ] Exception handling
-- [x] Do a report for 7 days
-- [x] Have the report mention if all the fantasy positions have games and which ones don't
+- [x] Do a report for x number of days
+- [x] Have the report mention if any benched players are Active
