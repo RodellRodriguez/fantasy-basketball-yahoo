@@ -20,7 +20,7 @@ Note:
 **Dependencies**
 * Python 3.5
 * Selenium WebDriver
-* [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads). Additionally check out their ["Getting stated"](https://sites.google.com/a/chromium.org/chromedriver/getting-started) page 
+* [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads). Additionally check out their ["Getting started"](https://sites.google.com/a/chromium.org/chromedriver/getting-started) page 
 
 **Setup**
 1. Download script
