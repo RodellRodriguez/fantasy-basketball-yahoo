@@ -2,10 +2,10 @@
 
 **Description**
 
-It is my first time playing Fantasy Basketball and my friends decided to use Yahoo's Fantasy Basketball website. The NBA has 82 games in the season so that means I would need to choose which of my players to start at least 82 times. I decided to create a Python script, utilizing the Selenium library, that automates the task of starting your active players for as many days as the user desires. Active means a player's team is playing on the corresponding date. 
+It is my first time playing Fantasy Basketball and my friends decided to use Yahoo's Fantasy Basketball website. The NBA has 82 games in the season so that means I would need to choose which of my players to start at least 82 times. I decided to create a Python script, utilizing the Selenium library, that automates the task of starting your active players for as many days as the user desires by clicking the "Start Active Players" button on the Yahoo Fantasy UI. Active means a player's team is playing on the corresponding date.
 
 4 cases where the report will tell the user to investigate their roster:
-1. When an active player is on the bench
+1. When an active player is on the bench. This will only occur if more than 10 players are active for that day.
 2. When an active player's status is Injured
 3. When an active player's status is Out
 4. When an active player's status is GTD
