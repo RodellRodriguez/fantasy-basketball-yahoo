@@ -24,9 +24,9 @@ Note:
 
 **Setup**
 1. Download script
-2. Change CHROME_DRIVER_PATH to the location of your chromedriver.exe file if necessary.
-3. Change NUM_OF_PLAYERS variable if necessary
-4. Install dependencies
+2. Install dependencies
+3. Change CHROME_DRIVER_PATH to the location of your chromedriver.exe file if necessary.
+4. Change NUM_OF_PLAYERS variable if necessary
 5. Run Program
 
 **To-Do List**
