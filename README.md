@@ -38,4 +38,4 @@ Note:
 - [ ] Account for fantasy rule where you can have an additional player on your roster if one of your players is injured
 - [ ] Exception handling
 - [ ] Remove print statements and implement logging practices
-- [ ] Implement Page Object Model to practice code maintainability and loose coupling coding practices
+- [ ] Implement [Page Object Model](https://www.toptal.com/selenium/test-automation-in-selenium-using-page-object-model-and-page-factory) to practice code maintainability and loose coupling coding practices
