@@ -1,10 +1,14 @@
 #getpass is a secure way for people to input their password without it displaying on the terminal
 import getpass
+import time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import WebDriverException
+from selenium.common.exceptions import StaleElementReferenceException
+
 
 def explicit_wait_by_id(driver, id):
 	element = WebDriverWait(driver, 10).until(
@@ -123,12 +127,20 @@ def main():
 			player_position_xpath = player_name_team_base_xpath +"/td[1]/div/span"
 			player_opponent_xpath = player_name_team_base_xpath + "/td[5]/div"
 			player_status_xpath = player_name_team_base_xpath + "/td[3]/div/div[2]/span"
+			
+			attempts = 0
+			while attempts < 3:
+				try:
+					player_name = driver.find_element_by_xpath(player_name_xpath).text
+					player_team = driver.find_element_by_xpath(player_team_xpath).text
+					player_position = driver.find_element_by_xpath(player_position_xpath).text
+					player_opponent = driver.find_element_by_xpath(player_opponent_xpath).text
+					player_status = driver.find_element_by_xpath(player_status_xpath).text
+					break
+				except StaleElementReferenceException as e:
+					pass
+				attempts += 1
 
-			player_name = driver.find_element_by_xpath(player_name_xpath).text
-			player_team = driver.find_element_by_xpath(player_team_xpath).text
-			player_position = driver.find_element_by_xpath(player_position_xpath).text
-			player_opponent = driver.find_element_by_xpath(player_opponent_xpath).text
-			player_status = driver.find_element_by_xpath(player_status_xpath).text
 		#If we receive an empty string
 			if not player_status: 
 				player_status = 'Healthy'
@@ -148,8 +160,14 @@ def main():
 			else: 
 				print(player_name + ' is not playing today')
 			print('Status: ', player_status)
-	
-		click_next_date(driver)
+
+		try:
+			click_next_date(driver)
+		except WebDriverException as e:
+			raise e
+			driver.refresh()
+			click_next_date(driver)
+		
 #Print report	
 	if active_bench_list:
 		print()
