@@ -10,9 +10,9 @@
 
 ## Description
 
-It is my first time playing Fantasy Basketball and my friends decided to use Yahoo's Fantasy Basketball website. The NBA has 82 games in the season so that means I would need to choose which of my players to start at least 82 times. 
+I am an avid basketball fan but never really got into the fantasy sports culture. It is my first time playing Fantasy Basketball and my friends decided to use Yahoo's Fantasy Basketball website to play. The NBA has 82 games in the season so that means I would need to choose which of my players to start at least 82 times. 
 
-I decided to create a Python script, utilizing the Selenium library, that automates the task of starting your active players for as many days as the user desires by clicking the "Start Active Players" button on the Yahoo Fantasy UI. Active means a player's team is playing on the corresponding date.
+Seeing that it would be extremely tedious to constantly manually start my players I decided to create a Python script, utilizing the Selenium library, that automates the task of starting your active players by clicking the "Start Active Players" button on the Yahoo Fantasy UI. Active means a player's team is playing on the corresponding date.
 
 4 cases where the report will tell the user to investigate their roster:
 1. When an active player is on the bench. This will only occur if more than 10 players are active for that day.
@@ -36,7 +36,7 @@ Note:
 1. Download script
 2. Install dependencies
 3. Change CHROME_DRIVER_PATH to the location of your chromedriver.exe file if necessary.
-4. Change NUM_OF_PLAYERS variable if necessary
+4. Change NUM_OF_PLAYERS and NUM_OF_DAYS variable as necessary
 5. Run Program
 
 ## Example Output
@@ -71,7 +71,7 @@ As of right now all of my players are healthy but if unfortunately one of them d
 - [x] Have the script prompt the user for their yahoo email, password, and team name instead of editing the source code
 - [ ] Additional Exception handling
 - [ ] Remove print statements and implement logging practices
-- [ ] Implement [Page Object Model](https://www.toptal.com/selenium/test-automation-in-selenium-using-page-object-model-and-page-factory) to practice code maintainability and loose coupling coding practices
+- [ ] Implement [Page Object Model](https://www.toptal.com/selenium/test-automation-in-selenium-using-page-object-model-and-page-factory) to practice code maintainability and loose coupling coding practices.
 
 
 **[Return to Table of Contents](#table-of-contents)**
