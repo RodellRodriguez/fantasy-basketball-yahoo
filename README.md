@@ -61,7 +61,7 @@ So if we take the first person on my fantasy team, D'Angelo Russell:
 
 Each of the attributes are web scraped via Selenium by looking at the Yahoo's website's various web elements.
 
-As of right now all of my players are healthy but if unfortunately one of them does get injured I will be sure to update the screenshots and display how that appears in the terminal
+As of right now all of my players are healthy and I don't have more than 10 active players on any given day so none of the 4 situations I outlined in the [description](#description) occur but if any of the situations occur then I will be sure to update the screenshots and display how that appears in the terminal.
 
 ## To-Do List
 
