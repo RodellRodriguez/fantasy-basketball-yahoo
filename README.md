@@ -4,7 +4,7 @@
 
 **[Description](#description)**<br>
 **[Dependencies](#dependencies)**<br>
-**[Setup](#detup)**<br>
+**[Setup](#setup)**<br>
 **[Example Output](#example-output)**<br>
 **[To-Do List](#to-do-list)**<br>
 
@@ -65,3 +65,6 @@ As of right now all of my players are healthy but if unfortunately one of them d
 - [ ] Additional Exception handling
 - [ ] Remove print statements and implement logging practices
 - [ ] Implement [Page Object Model](https://www.toptal.com/selenium/test-automation-in-selenium-using-page-object-model-and-page-factory) to practice code maintainability and loose coupling coding practices
+
+
+**[Return to Table of Contents](#table-of-contents)**
