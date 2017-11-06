@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-**[Description](#Description)**<br>
-**[Dependencies](#Dependencies)**<br>
-**[Setup](#Setup)**<br>
-**[Example Output](#Example-Output)**<br>
-**[To-Do List](#To-Do-List)**<br>
+**[Description](#description)**<br>
+**[Dependencies](#dependencies)**<br>
+**[Setup](#detup)**<br>
+**[Example Output](#example-output)**<br>
+**[To-Do List](#to-do-list)**<br>
 
 ## Description
 
