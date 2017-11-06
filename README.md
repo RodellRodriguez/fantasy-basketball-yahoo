@@ -55,7 +55,7 @@ I could not screenshot all of the printouts by the terminal for that day but it 
 So if we take the first person on my fantasy team, D'Angelo Russell:
 1. D'Angelo Russell
 2. Bkn which is short for Brooklyn Nets. He can play either PG, SG, or G(means either SG or PG are eligible) 
-3. Assigned to the G position
+3. Assigned to the PG Fantasy Basketball position
 4. He is playing against Pho (Phoneix Suns). The @ symbol means he is a visitor so he is playing Pho's arena.
 5. No alarming statuses detected on the UI so the terminal outputs that he is Healthy
 
