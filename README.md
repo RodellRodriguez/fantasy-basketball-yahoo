@@ -52,6 +52,13 @@ I could not screenshot all of the printouts by the terminal for that day but it 
 4. Player's opponent
 5. Player's Status (Healthy, Injured, Game Time Decision (GTD), or Out)
 
+So if we take the first person on my fantasy team, D'Angelo Russell:
+1. D'Angelo Russell
+2. Bkn which is short for Brooklyn Nets. He can play either PG, SG, or G(means either SG or PG are eligible) 
+3. Assigned to the G position
+4. He is playing against Pho (Phoneix Suns). The @ symbol means he is a visitor so he is playing Pho's arena.
+5. No alarming statuses detected on the UI so the terminal outputs that he is Healthy
+
 Each of the attributes are web scraped via Selenium by looking at the Yahoo's website's various web elements.
 
 As of right now all of my players are healthy but if unfortunately one of them does get injured I will be sure to update the screenshots and display how that appears in the terminal
