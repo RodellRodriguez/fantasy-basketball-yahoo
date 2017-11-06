@@ -54,14 +54,14 @@ I could not screenshot all of the printouts by the terminal for that day but it 
 
 So if we take the first person on my fantasy team, D'Angelo Russell:
 1. D'Angelo Russell
-2. Bkn which is short for Brooklyn Nets. He can play either PG, SG, or G(means either SG or PG are eligible) 
-3. Assigned to the PG Fantasy Basketball position
-4. He is playing against Pho (Phoneix Suns). The @ symbol means he is a visitor so he is playing Pho's arena.
+2. Bkn which is short for Brooklyn Nets. Russell can play either PG, SG, and technically G as well (G position means either SG or PG are eligible) 
+3. Russell is assigned to the PG Fantasy Basketball position
+4. He is playing against Pho (Phoneix Suns). The @ symbol means he is a visitor so he is playing at Pho's arena. Note that the next player in my roster, Devin Booker, plays for Pho and is playing against Bkn without an @ symbol therefore Booker is playing at his home arena in Pho.
 5. No alarming statuses detected on the UI so the terminal outputs that he is Healthy
 
 Each of the attributes are web scraped via Selenium by looking at the Yahoo's website's various web elements.
 
-As of right now all of my players are healthy and I don't have more than 10 active players on any given day so none of the 4 situations I outlined in the [description](#description) occur but if any of the situations occur then I will be sure to update the screenshots and display how that appears in the terminal.
+As of right now all of my players are healthy and I don't have more than 10 active players on any given day so none of the 4 situations I outlined in the [description](#description) occur but if any of the situations occur then I will be sure to update the screenshots and display how that appears in the terminal. I've seen it occur but forgot to screenshot it to document the results. I will probably purposely pick up an injured player or something to display how the investigation report appears on the terminal
 
 ## To-Do List
 
