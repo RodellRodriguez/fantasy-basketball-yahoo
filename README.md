@@ -42,7 +42,7 @@ I could not screenshot all of the printouts by the terminal but it does capture 
 4. Player's opponent
 5. Player's Status (Healthy, Injured, Game Time Decision (GTD), or Out)
 
-Each of the attributes are web scraped via Selenium.
+Each of the attributes are web scraped via Selenium by looking at the Yahoo's website's various web elements.
 
 As of right now all of my players are healthy but if unfortunately one of them does get injured I will be sure to update the screenshots and display how that appears in the terminal
 
