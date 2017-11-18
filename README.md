@@ -69,7 +69,7 @@ Each of the attributes are web scraped via Selenium by looking at the Yahoo's we
 
 Above is an example of what the report outputs at the end of the script when at least one of the 4 situations I outlined in the [description](#description) occur.
 
-In specific, situations 1, 2, and 4 are occuring. For situation 1 am showing my roster for the date of November 22'nd (date is displayed in the upper left corner). The "Start Active Players" button ended up benching one of my best players on my roster Devin Booker. I'm not sure what the algorithm is that Yahoo implemented by thanks to the script I am notified that Devin Booker got benched even though he has a game that day. I definitely would start him 100% of the time over Courtney Lee so I will have to manually change my roster for that day. For situation 2 and 4 you can see that Anthony Davis is marked as GTD but has a game that day and D'Angelo Russell is marked as Injured and has a game that day.
+In specific, situations 1, 2, and 4 are occuring. For situation 1 am showing my roster for the date of November 22'nd (date is displayed in the upper left corner). The "Start Active Players" button ended up benching one of my best players on my roster Devin Booker. I'm not sure what the algorithm is that Yahoo implemented by thanks to the script I am notified that Devin Booker got benched even though he has a game that day. I definitely would start him 100% of the time over Courtney Lee so I will have to manually change my roster for that day. For situation 2 and 4 you can see that D'Angelo Russell is marked as Injured but has a game that day and Anthony Davis is marked as GTD but has a game that day.
 
 ## To-Do List
 
