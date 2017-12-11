@@ -77,7 +77,6 @@ In specific, situations 1, 2, and 4 are occuring. For situation 1 am showing my 
 - [x] Report status of a player e.g. Healthy, Injured, Out, Game Time Decision(GTD)
 - [x] Have the report mention if any Benched, Injured, Out, and GTD players are Active
 - [x] Have the script prompt the user for their yahoo email, password, and team name instead of editing the source code
-- [ ] Make installation easy
 - [ ] Additional Exception handling
 - [ ] Allow people to easily install this onto their computer to use
 - [ ] Remove print statements in favor of logs so that the script will output the log at the end of the script
