@@ -4,7 +4,7 @@
 
 I am an avid basketball fan but never really got into the fantasy sports culture. It is my first time playing Fantasy Basketball and my friends decided to use Yahoo's Fantasy Basketball website to play.
 
-This repo accomplishes is a collection of 2 seperate Python programs that doe the following:
+This repo is a collection of 2 seperate Python programs that accomplish the following:
 
 1. Auotmates starting  your roster for any number of games in the future
 
