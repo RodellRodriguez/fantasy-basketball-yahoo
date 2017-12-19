@@ -40,9 +40,9 @@ def main():
 		auto_refresh_kwargs=extra, token_updater=token_saver
 	   )
 
-	base_yahoo_endpoint = 'https://fantasysports.yahooapis.com/fantasy/v2/game/nba/'
+	base_yahoo_endpoint = 'https://fantasysports.yahooapis.com/fantasy/v2/'
 
-	r = client.get(base_yahoo_endpoint)
+	r = client.get(base_yahoo_endpoint + 'game/nba/')
 
 	stat_category = {
 		'FG%': 5,
@@ -57,6 +57,7 @@ def main():
 	}
 	print(r.content)
 	print('Im Done!')
+
 
 
 if __name__== "__main__":
