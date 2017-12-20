@@ -1,5 +1,8 @@
 from authentication import Authenticator
-from team_data import Team
+from downloader import Downloader
+from parser import Parser 
+from team import Team
+
 
 class YahooSession():
 	"""	A session container that encapsulates: authenticating with Yahoo's API using OAuth2 standard, downloading xml data with Yahoo's API,
@@ -20,14 +23,27 @@ class YahooSession():
 		self.client = self.oauth.client
 		self.league_id = '160754'
 		self.league_key = 'nba.l.' + self.league_id
+		self.downloader = Downloader(self.client, self.league_key)
+		self.parser = Parser()
+
+		# Each team data will be stored in the same index in the array as its id number
+		self.team_data = [None]
+		for id in range(1, num_of_teams+1): 
+			self.team_data.append(Team(id))
 
 
+	def get_all_team_stats(self, start_week_number, end_week_number):
+		for week in range(start_week_number, end_week_number+1):
+			for team_id, team in enumerate(self.team_data[1:], 1):
+				response = self.downloader.get_stats(team_id, week)
+				self.parser.parse_stats(response, team)
 
 
 def main():
-	test = YahooSession()
-	r = test.client.get('https://fantasysports.yahooapis.com/fantasy/v2/game/nba/')
-	print(r.content)
+	num_of_teams = 8
+	test = YahooSession(num_of_teams)
+	test.get_all_team_stats(1,1)
+
 
 if __name__ == "__main__":
 	main()

@@ -11,14 +11,12 @@ class Downloader():
 	# Uses client to access Yahoo stats endpoint and returns a Response object
 	def get_stats(self, team_id, week_number):
 		yahoo_stats_endpoint = (
-			"https://fantasysports.yahooapis.com/fantasy/v2/"
-			+ "team/nba.l."
+			"https://fantasysports.yahooapis.com/fantasy/v2/team/"
 			+ self.league_key 
 			+ ".t." 
-			+ team_id 
-			+ "/stats;type=week;"
-			+ "week=" 
-			+ week_number
+			+ str(team_id)
+			+ "/stats;type=week;week=" 
+			+ str(week_number)
 		)
 
 		response = self.client.get(yahoo_stats_endpoint)

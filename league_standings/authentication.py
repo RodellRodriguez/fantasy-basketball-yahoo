@@ -57,9 +57,9 @@ class Authenticator():
 			'client_secret': self.client_secret,
 		}
 		self.client = OAuth2Session(self.client_id, token=self.token, auto_refresh_url=self.yahoo_oauth_get_token_url, 
-			auto_refresh_kwargs=extra, token_updater=self.token_saver)
+			auto_refresh_kwargs=extra, token_updater=self._token_saver)
 
-	def token_saver(self, token):
+	def _token_saver(self, token):
 		self.initial_session.token = token
 
 
