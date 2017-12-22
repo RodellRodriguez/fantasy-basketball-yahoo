@@ -1,5 +1,4 @@
 import xml.etree.ElementTree as ET
-from pprint import pprint
 
 class Parser():
 	def __init__(self):
@@ -26,11 +25,7 @@ class Parser():
 				stat_category, stat_values = [], []
 				self._parse_stats(root, stat_category, stat_values)
 				stats_dict = self._create_stats_dictionary(stat_category,stat_values)		
-				print("Before save team stats func")
-				pprint(stats_dict)
 				self._save_team_stats(team, week, stats_dict)
-				print("After save team stats func")
-				pprint(stats_dict)
 
 			else: print('Weeks do not match. Cannot parse Team ID #{}'.format(team.id))
 
