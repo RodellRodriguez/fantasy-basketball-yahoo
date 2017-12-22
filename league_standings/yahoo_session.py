@@ -27,23 +27,24 @@ class YahooSession():
 		self.parser = Parser()
 
 		# Each team data will be stored in the same index in the array as its id number
-		self.team_data = [None]
+		self.all_teams = [None]
 		for id in range(1, num_of_teams+1): 
-			self.team_data.append(Team(id))
+			self.all_teams.append(Team(id))
 
 
 	def get_all_team_stats(self, start_week_number, end_week_number):
 		for week in range(start_week_number, end_week_number+1):
-			for team_id, team in enumerate(self.team_data[1:], 1):
+			for team_id, team in enumerate(self.all_teams[1:], 1):
 				response = self.downloader.get_stats(team_id, week)
-				self.parser.parse_stats(response, team)
+				self.parser.parse_stats(response, team, week)
 
 
 def main():
 	num_of_teams = 8
 	test = YahooSession(num_of_teams)
-	test.get_all_team_stats(1,1)
-
+	test.get_all_team_stats(1,3)
+	test.all_teams[7].print_stats()
+	test.all_teams[8].print_stats()
 
 if __name__ == "__main__":
 	main()
