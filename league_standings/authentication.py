@@ -45,7 +45,7 @@ class Authenticator():
 		self.authorization_url, self.state = self.initial_session.authorization_url(self.yahoo_oauth_url, 
 			access_type='offline',prompt='select_account')
 
-		print("Please got to this website to get the authentication code: {}".format(self.authorization_url))
+		print("Please go to this website to get the authentication code: {}".format(self.authorization_url))
 		self.auth_code = input("Type the exact code given from the website. Then press enter.")
 		self.token = self.initial_session.fetch_token(token_url=self.yahoo_oauth_get_token_url, 
 			code=self.auth_code, client_secret=self.client_secret)

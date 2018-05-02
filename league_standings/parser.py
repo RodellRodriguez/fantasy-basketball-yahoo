@@ -107,6 +107,8 @@ class Parser():
 	def _clean_stat(self, category_num, stats_dict):
 		if category_num != '5' and category_num != '8':
 			stats_dict[category_num] = int(stats_dict[category_num])
+		else:
+			stats_dict[category_num] = float(stats_dict[category_num])
 
 	def _parse_week_calendar(self, response):
 		pass
@@ -117,3 +119,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+

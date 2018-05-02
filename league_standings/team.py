@@ -6,11 +6,11 @@ class Team():
 		
 	Attributes:
 
-		stats: a dictionary of dictionaries. Outer dictionary corresponds to the week and then the innter dictionary will contain all
-			of the stat types e.g stats['1']['FG%'] returns the FG% value for week 1.
-			We cannot do a list of dictionaries and use each index to correspond to the week number
-			Because in the future I wont be parsing values from week 1. I can start from week 5,10,12 etc.
-
+		stats: {
+			'week_number': {
+				'each stat'
+			}
+		}
 	"""
 
 	def __init__(self, team_id):

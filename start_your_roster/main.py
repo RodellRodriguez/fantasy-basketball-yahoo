@@ -88,7 +88,7 @@ def main():
 	YAHOO_PASSWORD = get_password()
 	TEAM_NAME = get_team_name()
 	NUM_OF_PLAYERS = 13
-	NUM_OF_DAYS = 7 
+	NUM_OF_DAYS = 60 
 
 	CHROME_DRIVER_PATH = "/usr/local/bin/chromedriver"
 	OPTIONS = webdriver.ChromeOptions()

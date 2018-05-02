@@ -3,7 +3,7 @@ from downloader import Downloader
 from parser import Parser 
 from team import Team
 from excel import Excel
-
+from load import load
 
 class YahooSession():
 	"""	A session container that encapsulates: authenticating with Yahoo's API using OAuth2 standard, downloading xml data with Yahoo's API,
@@ -43,12 +43,14 @@ class YahooSession():
 def main():
 	num_of_teams = 8
 	start_week = 1
-	end_week = 9
+	end_week = 10
 	test = YahooSession(num_of_teams)
 	test.get_all_team_stats(start_week, end_week)
-	file_name = 'League_Standing_Stats.xlsx'
-	excel = Excel(file_name, test.all_teams, start_week, end_week)
-	excel.write_to_spreadsheet()
+
+	load(test.all_teams)
+	#file_name = 'League_Standing_Stats.xlsx'
+	#excel = Excel(file_name, test.all_teams, start_week, end_week)
+	#excel.write_to_spreadsheet()
 	
 
 if __name__ == "__main__":
